@@ -32,6 +32,8 @@ else if (format[i] == 's')
 printed += handle_string(args);
 else if (format[i] == '%')
 printed += handle_percent();
+else if (format[i] == 'd' || format[i] == 'i')
+printed += handle_int(args);
 else
 {
 printed += _putchar('%');
@@ -44,6 +46,7 @@ printed += _putchar(format[i]);
 }
 i++;
 }
+
 
 va_end(args);
 return (printed);
