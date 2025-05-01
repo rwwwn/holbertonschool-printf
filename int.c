@@ -29,7 +29,7 @@ div *= 10;
 
 while (div != 0)
 {
-len += _putchar((num / div) + '0');
+len += _putchar((num / div) +'0');
 num %= div;
 div /= 10;
 }
